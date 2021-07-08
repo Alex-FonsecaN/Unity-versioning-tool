@@ -1,0 +1,30 @@
+# Unity-versioning-tool v1.0.0
+
+Manual PT-BR
+
+### O ARQUIVO DE CÓDIGO, DEVE MANTER-SE EM UMA PASTA DE NOME "Editor" PARA FUNCIONAMENTO EM UNITY. ###
+
+- Funcionalidades da ferramenta -
+	- Fazer controle de versionamento do seu jogo alterando em Project Settings.
+	- Renomear builds em um caminho definido pelo usuário de acordo com a versão específica.
+	- Suporte para builds Android,IOS e Windows. Detectadas automaticamente.
+	- Salvar o caminho personalizado da build e salvar a última versão aplicada, para não precisar reconfigurar sempre que fechar e abrir novamente a Unity.
+
+- Padrão de versionamento -
+	- A ferramenta foi feita com o padrão de versionamento SEMÂNTICO, adotando: major, minor e patch. Ex: 0.4.3
+	- Para builds de desenvolvimento, é adicionado a etapa de produção(Ex: Alpha) e um número de controle para definir
+	  quantas builds de dev foram feitas naquela versão. Ex: 0.3.4a2 (Indicando que 2 builds foram feitas na versão Alpha 0.4.3)
+	- Etapas de produção: Alpha, Beta, Release Candidate, Final.
+
+
+- Configurações iniciais -
+	- Encontre a ferramenta de versionamento na janela: "QA/Versionamento de Build"
+	- Para realizar a nomenclatura de uma build de acordo com sua versão, coloque manualmente o caminho da pasta da Build desejada, este caminho ficará salvo.
+
+- Funcionalidade dos Botões -
+	- "Aplicar versão e atribuir ao Player Settings" - Salva a versão alterada pelo usuário e aplica à Edit/Project Settings/Player/Version.
+	- "Aplicar versão e renomear Build" - Salva a versão alterada pelo usuário e renomea a Build no caminho especificado abaixo do botão.
+	- "Resetar números à Versão atual" - Altera os números no menu interativo de versionamento, para voltarem ao que eram antes de serem modificados pelo usuário.
+
+- Nomenclatura de janela-
+	- Abaixo das linhas iniciais de variáveis, crie seu caminho personalizado, alterando "QA/Versionamento de Build", para o caminho desejado.
